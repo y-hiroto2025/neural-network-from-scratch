@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# 仮想環境
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# データ・モデル
+*.pkl
+*.h5
+*.pth
+*.csv
+data/
+models/
+results/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# その他
+.env
+*.log
+.pytest_cache/
