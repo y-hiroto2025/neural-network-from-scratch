@@ -6,7 +6,7 @@ class ReLU:
   入力データが0以下ならば0、そうでないならそのままの値を出力するReLU層
   """
   def __init__(self):
-    pass
+    self.x = None
 
   def forward(self, x):
     output = np.maximum(0, x)
