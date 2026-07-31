@@ -1,0 +1,26 @@
+# Python関連のキャッシュ
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 仮想環境
+venv/
+.venv/
+env/
+
+# Jupyter Notebookのキャッシュ
+.ipynb_checkpoints/
+
+# データセットや保存したモデルデータ
+data/mnist/*
+!data/mnist/.gitkeep
+*.pkl
+*.npy
+*.npz
+
+# 不要ファイル
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/

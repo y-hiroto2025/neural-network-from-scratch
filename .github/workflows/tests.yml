@@ -1,0 +1,37 @@
+name: Tests and Linting
+
+# 実行されるタイミング：mainブランチへのPush時と、Pull Request作成時
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # クラウド上のLinux環境で実行
+
+    steps:
+    - name: コードのチェックアウト
+      uses: actions/checkout@v4
+
+    - name: Python 3.12のセットアップ
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+        cache: 'pip' # pipのインストールを高速化
+
+    - name: 依存関係のインストール
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: コードスタイルと文法のチェック (Ruff)
+      run: |
+        # エラーがあるコードがないか、文法違反がないかチェック
+        ruff check ./src ./tests
+
+    - name: ユニットテストの実行 (pytest)
+      run: |
+        # src 内の関数が正しく動くか自動テスト
+        pytest ./tests/
