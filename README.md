@@ -17,7 +17,7 @@
 ## Implementations
 以下の機能を実装しました。
 - **基礎モジュール:** パーセプトロン, 多層ニューラルネットワークの順伝播と逆伝播
-- **活性化関数:** Step, Sigmoid, ReLU, Tanh
+- **活性化関数:** Step, Sigmoid, ReLU, SoftMax, Tanh
 - **損失関数:** MSE, Cross-entropy Loss
 - **最適化手法:** SGD, Momentum, AdaGrad, Adam
 - **学習テクニック:** Batch Normalization, Weight decay, Dropout

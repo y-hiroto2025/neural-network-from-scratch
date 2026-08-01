@@ -30,8 +30,3 @@ jobs:
       run: |
         # エラーがあるコードがないか、文法違反がないかチェック
         ruff check ./src ./tests
-
-    - name: ユニットテストの実行 (pytest)
-      run: |
-        # src 内の関数が正しく動くか自動テスト
-        # pytest ./tests/
