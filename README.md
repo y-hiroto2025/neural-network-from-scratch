@@ -50,8 +50,8 @@ neural-network-from-scratch/
 │   └── datasets.py                              # データローダ
 ├── notebooks/
 │   ├── 01_basic_perceptron.ipynb                # パーセプトロン
-│   ├── 02_mlp_mnist.ipynb                       # 多層パーセプトロンでのMNISTデータセットの学習
-│   ├── 03_activation_functions.ipynb            # 活性化関数
+│   ├── 02_activation_functions.ipynb            # 活性化関数
+│   ├── 03_mlp_mnist.ipynb                       # 多層パーセプトロンでのMNISTデータセットの学習
 │   ├── 04_backpropagation_visualization.ipynb   # 勾配確認と計算速度可視化
 │   └── 05_optimization_comparison.ipynb         # 最適化手法の比較
 ├── tests/                                       # テスト実行のためのコード
