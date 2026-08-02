@@ -18,7 +18,7 @@
 以下の機能を実装しました。
 - **基礎モジュール:** パーセプトロン, 多層ニューラルネットワークの順伝播と逆伝播
 - **活性化関数:** Step, Sigmoid, ReLU, SoftMax, Tanh
-- **損失関数:** MSE, Cross-entropy Loss
+- **損失関数:** 2乗和誤差, Cross-entropy Loss
 - **最適化手法:** SGD, Momentum, AdaGrad, Adam
 - **学習テクニック:** Batch Normalization, Weight decay, Dropout
 - **データセット学習:** MNISTデータセットを用いた画像分類モデルの学習
@@ -52,8 +52,9 @@ neural-network-from-scratch/
 │   ├── 01_basic_perceptron.ipynb                # パーセプトロン
 │   ├── 02_activation_functions.ipynb            # 活性化関数
 │   ├── 03_mlp_mnist.ipynb                       # 多層パーセプトロンでのMNISTデータセットの学習
-│   ├── 04_backpropagation_visualization.ipynb   # 勾配確認と計算速度可視化
-│   └── 05_optimization_comparison.ipynb         # 最適化手法の比較
+│   ├── 04_loss_functions.ipynb                  # 損失関数
+│   ├── 05_backpropagation_visualization.ipynb   # 勾配確認と計算速度可視化
+│   └── 06_optimization_comparison.ipynb         # 最適化手法の比較
 ├── tests/                                       # テスト実行のためのコード
 │   ├── __init__.py
 │   ├── test_layers.py
