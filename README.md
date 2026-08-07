@@ -3,7 +3,7 @@
 ## Overview
 　本リポジトリはPythonでNumpyを用いてニューラルネットワークを実装し、各種アルゴリズムの挙動を比較・検証した学習リポジトリです。
  
-　基本的な構造は 斎藤 康毅 著「ゼロから作るDeep Learning Pythonで学ぶディープラーニングの理論と実装（オライリー・ジャパン, 公式リポジトリ: https://github.com/oreilly-japan/deep-learning-from-scratch）」を参考にして実装しつつ、独自で比較検証や、Google Colabで動かしやすい形へのコードの整理を行っています。
+　基本的な構造は 斎藤 康毅 著「ゼロから作るDeep Learning Pythonで学ぶディープラーニングの理論と実装（オライリー・ジャパン, 公式リポジトリ: [https://github.com/oreilly-japan/deep-learning-from-scratch] ）」を参考にして実装しつつ、独自で比較検証や、Google Colabで動かしやすい形へのコードの整理を行っています。
  
 　実装において、学習の効率化のため、要件定義、ディレクトリ構造の設計、およびおよびCI/CD（GitHub Actions）の下書き作成において、LLM(Gemini 3.1 Pro)の出力を使用しています。アルゴリズムの実装や比較の考察については、書籍を参考に自身の理解に基づいて行っています。
 
