@@ -53,8 +53,10 @@ neural-network-from-scratch/
 │   ├── 02_activation_functions.ipynb            # 活性化関数
 │   ├── 03_mlp_mnist.ipynb                       # 多層パーセプトロンでのMNISTデータセットの学習
 │   ├── 04_loss_functions.ipynb                  # 損失関数
-│   ├── 05_backpropagation_visualization.ipynb   # 勾配確認と計算速度可視化
-│   └── 06_optimization_comparison.ipynb         # 最適化手法の比較
+│   ├── 05_utils.ipynb                           # 数値微分・勾配・勾配降下法
+│   ├── 06_two_layer_net.ipynb                   # 2層ニューラルネットワーク
+│   ├── 07_backpropagation_visualization.ipynb   # 勾配確認と計算速度可視化
+│   └── 08_optimization_comparison.ipynb         # 最適化手法の比較
 ├── tests/                                       # テスト実行のためのコード
 │   ├── __init__.py
 │   ├── test_layers.py
