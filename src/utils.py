@@ -1,5 +1,3 @@
-import numpy as np
-
 def function_1(x):
     return x**2
 
