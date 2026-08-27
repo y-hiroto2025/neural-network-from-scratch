@@ -4,6 +4,7 @@ from activation_functions import sigmoid, softmax
 from loss_functions import cross_entropy_error
 from utils import numerical_gradient
 
+
 class TwoLayerNet:
 
     def __init__(self, input_size, hidden_size, output_size, weight_init_std=0.01):
