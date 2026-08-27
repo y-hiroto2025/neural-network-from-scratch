@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def numerical_diff(f, x):
     """
     数値微分(中心差分)

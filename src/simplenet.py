@@ -1,6 +1,8 @@
 import numpy as np
+
 from activation_functions import softmax
 from loss_functions import cross_entropy_error
+
 
 class simpleNet:
     def __init__(self):
@@ -15,13 +17,3 @@ class simpleNet:
         loss = cross_entropy_error(y, t)
 
         return loss
-
-net = simpleNet()
-print(net.W)
-
-x = np.array([0.6, 0.9])
-p = net.predict(x)
-print(p, np.argmax(p))
-
-t = np.array([0, 0, 1])
-print(net.loss(x, t))
