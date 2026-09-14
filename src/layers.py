@@ -24,7 +24,7 @@ class MulLayer:
 
 class AddLayer:
     def __init__(self):
-        pass
+        pass                    # 逆伝播時にx,yの値は関係ない
 
     def forward(self, x, y):
         out = x + y
@@ -40,7 +40,7 @@ class ReLU:
         self.mask = None
 
     def forward(self, x):
-        self.mask = (x <= 0)
+        self.mask = (x <= 0)    # x<=0の要素がTrueとなるbool配列を生成
         out = x.copy()
         out[self.mask] = 0
 
@@ -83,8 +83,8 @@ class Affine:
 
     def backward(self, dout):
         dx = np.dot(dout, self.W.T)
-        self.dW = np.dot(self.W.T, dout)
-        self.db = np.dot(dout, axis=0)
+        self.dW = np.dot(self.x.T, dout)
+        self.db = np.sum(dout, axis=0)
 
         return dx
 
@@ -103,6 +103,6 @@ class SoftmaxWithLoss:
 
     def backward(self, dout=1):
         batch_size = self.t.shape[0]
-        dx = (self.y -self.t) / batch_size
+        dx = (self.y - self.t) / batch_size
 
         return dx
