@@ -1,10 +1,9 @@
-import numpy as np
 from collections import OrderedDict
 
-from activation_functions import sigmoid, softmax
-from loss_functions import cross_entropy_error
-from utils import numerical_gradient
+import numpy as np
+
 from layers import *
+from utils import numerical_gradient
 
 
 class TwoLayerNet:
